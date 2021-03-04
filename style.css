@@ -4,14 +4,15 @@
     padding: 0;
     border: 0;
 }
-body {
-    align-items: center;
+#meio {
     width: 940px;
-    margin: auto;
+    margin: 0 auto;
     font-family: 'Roboto', sans-serif;
 }
 .menu{
     margin: 36.1px 30px ;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
 }
 .menu img{
    margin-right: 122.4px;
@@ -73,7 +74,7 @@ footer{
     margin-top:  60px;
     padding: 15px;
     text-align: center;
-    width: 100%;
     color: #999999;
     font-size: 14px;
+    font-family: 'Roboto', sans-serif;
 }
