@@ -84,9 +84,15 @@ footer{
     color: #444444;
     line-height: 28px;
 }
+.sobre h3{
+    font-size: 24px;
+    color: #111111; 
+    margin-bottom: 20px;
+}
 .sobre h4{
     font-size: 20px;
     color: #111111;
+    margin-bottom: 20px;
 }
 
 #modal-grande{
@@ -111,10 +117,10 @@ footer{
 }
 #modal-pequeno img{
     border-radius: 15px;
-    border-radius: 15px;
     margin: 30px 30px 20px 30px;
     width: 600px;
     height: 200px;
+    object-fit: cover;
 }
 #modal-pequeno h6 {
     margin-bottom: 5px;
@@ -133,4 +139,7 @@ footer{
 .ativado{
     display: none;
 
+}
+.sobre p{
+    margin-bottom: 30px;
 }
