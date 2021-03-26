@@ -1,20 +1,5 @@
-<!DOCTYPE html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Foodfy</title>
-</head>
-<body>
-    <div id="meio" >
-        <header>
-            <div class="menu">
-                <img src="imgs/logo.png" alt="">
-                <div>
-                    <a href="sobre.html">Sobre</a>
-                    <a href="receitas.html">Receitas</a>
-                </div>
-            </div>
+{% extends "base.njk" %}
+            {% block caixa %}
             <div id="caixa">
                 <div>            
                     <h1>As melhores receitas</h1>
@@ -23,8 +8,8 @@
                     <img src="imgs/chef.png" alt="">
                 </p>
             </div>
-        </header>
-        <main>
+            {% endblock %}                     
+            {% block cards %}
             <h2>Mais acessadas</h2>
             <section class="cards">
                 <div class="card">
@@ -58,12 +43,4 @@
                     <p>por Vania Steroski</p>
                 </div>
             </section>
-        </main>
-    </div>
-    <footer>
-        <div>
-            <p>Todos direitos reservados, receitas Foodfy.</p>
-        </div>
-    </footer>
-</body>
-</html>
+            {% endblock %} 

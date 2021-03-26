@@ -1,24 +1,6 @@
-<!DOCTYPE html>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Foodfy</title>
-</head>
-<body>
-    <div id="meio" >
-        <header>
-            <div class="menu">
-                <a style="margin-right:0" href="index.html"><img src="imgs/logo.png" alt=""></a>
-                <div>
-                    <a href="sobre.html"><strong>Sobre</strong></a>
-                    <a href="receitas.html">Receitas</a>
-                </div>
-            </div>
+ {% extends "base.njk" %}          
+            {% block cards %}
 
-        </header>
-        <main>
            <div class="sobre">
             <h3>Sobre o Foodfy</h3>
             <p>Suspendisse placerat neque neque. Morbi dictum nulla non sapien rhoncus, et mattis erat commodo. Aliquam vel lacus a justo mollis luctus. Proin vel auctor eros, sed eleifend nunc. Curabitur eget tincidunt risus. Mauris malesuada facilisis magna, vitae volutpat sapien tristique eu. Morbi metus nunc,
@@ -59,14 +41,5 @@
                 sodales eros. Nunc ut nulla faucibus enim ultricies euismod.
             </p>
            </div>
-
-        </main>
-    </div>
-    <footer>
-        <div>
-            <p>Todos direitos reservados, receitas Foodfy.</p>
-        </div>
-    </footer>
-</body>
-</html>
+            {% endblock %}
 
