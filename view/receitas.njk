@@ -1,75 +1,22 @@
 {% extends "base.njk" %}
             {% block caixa %}
             <section class="cards">
+                {% for item in itens %}
                 <div class="card">
-                    <img src="imgs/burger.png" alt="">
-                    <h6>Triplo bacon burger</h6>
-                    <p>por Jorge Relato</p>
+                    <img src="{{item.image}}" alt="">
+                    <h6>{{item.title}}</h6>
+                    <p>por {{item.author}}</p>
                 </div>
+                {% endfor %}
+                {% for item in itens %}
                 <div class="card">
-                    <img src="imgs/pizza.png" alt="">
-                    <h6>Pizza 4 estações</h6>
-                    <p>por Fabiana Melo</p>
+                    <img src="{{item.image}}" alt="">
+                    <h6>{{item.title}}</h6>
+                    <p>por {{item.author}}</p>
                 </div>
-                <div class="card">
-                    <img src="imgs/espaguete.png" alt="">
-                    <h6>Espaguete ao alho</h6>
-                    <p>por Júlia Kinoto</p>
-                </div>
-                <div class="card">
-                    <img src="imgs/lasanha.png" alt="">
-                    <h6>Lasanha mac n’ cheese</h6>
-                    <p>por Juliano Vieira</p>
-                </div>
-                <div class="card">
-                    <img src="imgs/doce.png" alt="">
-                    <h6>Docinhos pão-do-céu</h6>
-                    <p>por Ricardo Golvea</p>
-                </div>
-                <div class="card">
-                    <img src="imgs/asinhas.png" alt="">
-                    <h6>Asinhas de frango ao barbecue</h6>
-                    <p>por Vania Steroski</p>
-                </div>
-                <div class="card">
-                    <img src="imgs/burger.png" alt="">
-                    <h6>Triplo bacon burger</h6>
-                    <p>por Jorge Relato</p>
-                </div>
-                <div class="card">
-                    <img src="imgs/pizza.png" alt="">
-                    <h6>Pizza 4 estações</h6>
-                    <p>por Fabiana Melo</p>
-                </div>
-                <div class="card">
-                    <img src="imgs/espaguete.png" alt="">
-                    <h6>Espaguete ao alho</h6>
-                    <p>por Júlia Kinoto</p>
-                </div>
-                <div class="card">
-                    <img src="imgs/lasanha.png" alt="">
-                    <h6>Lasanha mac n’ cheese</h6>
-                    <p>por Juliano Vieira</p>
-                </div>
-                <div class="card">
-                    <img src="imgs/doce.png" alt="">
-                    <h6>Docinhos pão-do-céu</h6>
-                    <p>por Ricardo Golvea</p>
-                </div>
-                <div class="card">
-                    <img src="imgs/asinhas.png" alt="">
-                    <h6>Asinhas de frango ao barbecue</h6>
-                    <p>por Vania Steroski</p>
-                </div>
+                {% endfor %}
                 </section>
-                
+                <script src="script.js"></script>
                 </div>
-                <div id="modal-grande" class="ativado">
-                        <div id="modal-pequeno">
-                            <img src="" alt="">
-                            <h6></h6>
-                            <p></p>
-                            <div id="close">Fechar modal</div>
-                        </div>
-                </div>
+
             {% endblock %}

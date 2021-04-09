@@ -1,0 +1,32 @@
+{% extends "base.njk" %}
+ {% block cards %}
+    
+<div id="">
+    <img src="{{itens.image}}" alt="">
+    <h6></h6>
+    <p></p>
+</div>
+<div>
+    <h3>Igredientes</h3>
+    <button class="esconder" >mostrar</button>
+    <ul>
+        <li></li>
+    </ul>
+</div>
+<div>
+    <h3>Modo de preparo</h3>
+    <button class="esconder" >mostrar</button>
+    <ul>
+        {% for item in itens.preparation%}
+            <li>{{item}}</li>
+        {% endfor%}
+    </ul>
+</div>
+<div>
+    <h3>Informaçõs adicionais</h3>
+    <button class="esconder" >mostrar</button>
+    <p>{{itens.information}}</p>
+    <p></p>
+</div>
+
+{% endblock %}
