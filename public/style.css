@@ -59,6 +59,7 @@ h2{
     border-radius: 15px;
     width: 100%;
     margin-bottom: 1.8% ;
+    object-fit: cover;
 }
 h6 {
     font-size: 18px;
@@ -142,4 +143,20 @@ footer{
 }
 .sobre p{
     margin-bottom: 30px;
+}
+
+#recipes img {
+    border-radius: 15px;
+}
+#recipes h6, p {
+    text-align: center;
+}
+#recipes h6{
+    font-size: 36px;
+    color: #111111;
+    margin: 50px 0 4px 0;
+}
+#recipes p{
+    font-size: 20px;
+    color: #777777;
 }
