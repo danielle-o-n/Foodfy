@@ -1,32 +1,40 @@
 {% extends "base.njk" %}
  {% block cards %}
     
-<div id="recipes">
+<div id ="recipes">
     <img src="{{itens.image}}" alt="">
     <h6>{{itens.title}}</h6>
     <p>{{itens.author}}</p>
 </div>
-<div>
-    <h3>Igredientes</h3>
-    <button class="esconder" >mostrar</button>
+<div id="sanfona">
+    <label>Igredientes
+    <button class="accordion">mostrar</button>
+    <div class="panel">
     <ul>
-        <li></li>
+        {% for item in itens.ingredients%}
+            <li>{{item}}</li>
+        {% endfor%}
     </ul>
-</div>
-<div>
-    <h3>Modo de preparo</h3>
-    <button class="esconder" >mostrar</button>
+    </div>
+    </label>
+    <label>Modo de preparo
+    <button class="accordion">mostrar</button>
+    <div class="panel">
     <ul>
         {% for item in itens.preparation%}
             <li>{{item}}</li>
         {% endfor%}
     </ul>
+    </div>
+    </label>
+    <label>Informaçõs adicionais
+    <button class="accordion">mostrar</button>
+    <div class="panel" style="padding:0">
+    <span>{{itens.information}}</span>
+    </div>
+    </label>
 </div>
-<div>
-    <h3>Informaçõs adicionais</h3>
-    <button class="esconder" >mostrar</button>
-    <p>{{itens.information}}</p>
-    <p></p>
-</div>
-
+{% endblock %}
+{% block script%}
+    <script src="accordion.js"></script>
 {% endblock %}
