@@ -4,11 +4,12 @@
 <div id ="recipes">
     <img src="{{itens.image}}" alt="">
     <h6>{{itens.title}}</h6>
-    <p>{{itens.author}}</p>
+    <p>por {{itens.author}}</p>
 </div>
 <div id="sanfona">
-    <label>Igredientes
-    <button class="accordion">mostrar</button>
+    <div class="mostaEsconde">
+    <label>Ingredientes</label>
+    <button class="accordion">MOSTRAR</button>
     <div class="panel">
     <ul>
         {% for item in itens.ingredients%}
@@ -16,9 +17,11 @@
         {% endfor%}
     </ul>
     </div>
-    </label>
-    <label>Modo de preparo
-    <button class="accordion">mostrar</button>
+    </div>
+
+    <div class="mostaEsconde">
+    <label>Modo de preparo</label>
+    <button class="accordion">MOSTRAR</button>
     <div class="panel">
     <ul>
         {% for item in itens.preparation%}
@@ -26,13 +29,16 @@
         {% endfor%}
     </ul>
     </div>
-    </label>
-    <label>Informaçõs adicionais
-    <button class="accordion">mostrar</button>
+    </div>
+
+    <div class="mostaEsconde">
+    <label>Informaçõs adicionais</label>
+    <button class="accordion">MOSTRAR</button>
     <div class="panel" style="padding:0">
     <span>{{itens.information}}</span>
     </div>
-    </label>
+    </div>
+    
 </div>
 {% endblock %}
 {% block script%}
